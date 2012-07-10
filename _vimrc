@@ -11,20 +11,10 @@ set nocompatible               " be iMproved
  " My Bundles here:
  "
  " original repos on github
- Bundle 'tpope/vim-pathogen'
- Bundle 'tpope/vim-fugitive'
- Bundle 'Lokaltog/vim-easymotion'
- Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
- Bundle 'tpope/vim-rails.git'
  Bundle 'altercation/vim-colors-solarized'
- " vim-scripts repos
- Bundle 'L9'
- Bundle 'FuzzyFinder'
- " non github repos
- Bundle 'git://github.com/pbrisbin/html-template-syntax.git'
- Bundle 'git://github.com/scrooloose/nerdtree.git'
- Bundle 'ftplugin'
- " ...
+ Bundle 'scrooloose/nerdtree.git'
+ Bundle 'pbrisbin/html-template-syntax.git'
+ Bundle 'kien/ctrlp.vim.git'
 
  filetype plugin indent on     " required!
  "
