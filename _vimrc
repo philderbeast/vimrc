@@ -22,6 +22,8 @@ set nocompatible               " be iMproved
  Bundle 'tpope/vim-repeat'
  Bundle 'tpope/vim-surround'
  Bundle 'jpalardy/vim-slime'
+ Bundle 'DrTom/fsharp-vim'
+ Bundle 'vim-scripts/VimClojure'
 
  filetype plugin indent on     " required!
  "
