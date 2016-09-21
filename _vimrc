@@ -24,6 +24,12 @@ set nocompatible               " be iMproved
  Bundle 'jpalardy/vim-slime'
  Bundle 'DrTom/fsharp-vim'
  Bundle 'vim-scripts/VimClojure'
+ Bundle 'jdonaldson/vaxe'
+ Bundle 'leafgarland/typescript-vim'
+ Bundle 'jsx/jsx.vim'
+ Bundle 'raichoo/haskell-vim'
+ Bundle 'raichoo/purescript-vim'
+ Bundle 'elmcast/elm-vim'
 
  filetype plugin indent on     " required!
  "
@@ -37,7 +43,7 @@ set nocompatible               " be iMproved
  " NOTE: comments after Bundle command are not allowed..
 
  syntax enable
- set background=light
+ set background=dark
  colorscheme solarized
 
 if has("gui_running")
@@ -126,4 +132,5 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
