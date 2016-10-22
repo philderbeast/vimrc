@@ -30,6 +30,7 @@ set nocompatible               " be iMproved
  Bundle 'raichoo/haskell-vim'
  Bundle 'raichoo/purescript-vim'
  Bundle 'elmcast/elm-vim'
+ Bundle 'idris-hackers/idris-vim'
 
  filetype plugin indent on     " required!
  "
