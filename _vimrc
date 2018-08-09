@@ -1,51 +1,53 @@
 set nocompatible               " be iMproved
- filetype off                   " required!
+filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
- " let Vundle manage Vundle
- " required! 
- Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
- " My Bundles here:
- "
- " original repos on github
- Bundle 'altercation/vim-colors-solarized'
- Bundle 'scrooloose/nerdtree'
- Bundle 'pbrisbin/html-template-syntax'
- Bundle 'kien/ctrlp.vim'
- Bundle 'scrooloose/nerdcommenter'
- Bundle 'mileszs/ack.vim'
- Bundle 'msanders/snipmate.vim'
- Bundle 'rstacruz/sparkup'
- Bundle 'tpope/vim-repeat'
- Bundle 'tpope/vim-surround'
- Bundle 'jpalardy/vim-slime'
- Bundle 'DrTom/fsharp-vim'
- Bundle 'vim-scripts/VimClojure'
- Bundle 'jdonaldson/vaxe'
- Bundle 'leafgarland/typescript-vim'
- Bundle 'jsx/jsx.vim'
- Bundle 'raichoo/haskell-vim'
- Bundle 'raichoo/purescript-vim'
- Bundle 'elmcast/elm-vim'
- Bundle 'idris-hackers/idris-vim'
+" Keep Plugin commands between vundle#begin/end.
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'pbrisbin/html-template-syntax'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mileszs/ack.vim'
+Plugin 'msanders/snipmate.vim'
+Plugin 'rstacruz/sparkup'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'jpalardy/vim-slime'
+Plugin 'DrTom/fsharp-vim'
+Plugin 'vim-scripts/VimClojure'
+Plugin 'jdonaldson/vaxe'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'jsx/jsx.vim'
+Plugin 'raichoo/haskell-vim'
+Plugin 'raichoo/purescript-vim'
+Plugin 'elmcast/elm-vim'
+Plugin 'idris-hackers/idris-vim'
+Plugin 'vim-airline/vim-airline'
 
- filetype plugin indent on     " required!
- "
- " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- "
- " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
- syntax enable
- set background=dark
- colorscheme solarized
+syntax enable
+set background=dark
+colorscheme solarized
 
 if has("gui_running")
   " GUI is running or is about to start.
@@ -104,7 +106,8 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 set list
-set listchars=tab:?\ ,eol:�
+set list
+set listchars=tab:!·,trail:·
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -135,3 +138,4 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+
